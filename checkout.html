@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Vivi Nefertari</title>
+</head>
+
+<body>
+    <header class="container-fluid p-2 bg-white text-center">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">VIVI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#assessorios">Assessórios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sapatos">Sapatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quemsomos">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sapatos">Contato</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="checkout.html"><i class="bi bi-cart3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="py-5 text-center">
+            <h2>Pagamento</h2>
+        </div>
+        <div class="container bg-white rounded-top mt-5" id="zero-pad">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 col-12 pt-3" id="carrinho">
+                    <div class="d-flex flex-column pt-4">
+                        <div><h5 class="text-uppercase font-weight-normal">Carrinho</h5></div>
+                        <div class="font-weight-normal">2 items</div>
+                    </div>
+                    <div class="d-flex flex-row px-lg-5 mx-lg-5 mobile" id="heading">
+                        <div class="px-lg-5 mr-lg-5" id="produc">Produtos</div>
+                        <div class="px-lg-5 ml-lg-5" id="prc">Preço</div>
+                        <div class="px-lg-5 ml-lg-1" id="quantity">Quantidade</div>
+                        <div class="px-lg-5 ml-lg-3" id="total">TOTAL</div>
+                    </div>
+                    <div id="produto0" class="d-flex flex-row justify-content-between align-items-center pt-lg-4 pt-2 pb-3 border-bottom mobile">
+                        <div class="d-flex flex-row align-items-center">
+                            <div><img src="/img/pic1 (1).webp" width="150" height="150" alt="" id="image"></div>
+                            <div class="d-flex flex-column pl-md-3 pl-1">
+                                <div><h6>SUNDAY CORSET TOP</h6></div>
+                                <div >Art.No:<span class="pl-2">091091001</span></div>
+                                <div>Cor:<span class="pl-3">Roxo</span></div>
+                                <div>Tamanho:<span class="pl-4">M</span></div>
+                            </div>                    
+                        </div>
+                        <div class="pl-md-0 pl-1"><b>R$150,00</b></div>
+                        <div class="pl-md-0 pl-2">
+                            <span class="fa fa-minus-square text-secondary" onclick="removerItem(0)"></span>
+                                <span class="px-md-3 px-1" id="quantidade0">0</span>
+                            <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(0)"></span>
+                        </div>
+                        <div class="pl-md-0 pl-1"><b>R$</b> <span id="total0"></span></div>
+                        <div class="close">&times;</div>
+                    </div>
+                    <div id="produto1" class="d-flex flex-row justify-content-between align-items-center pt-4 pb-3 mobile">
+                        <div class="d-flex flex-row align-items-center">
+                            <div><img src="/img/pic1 (1).jpg" width="150" height="150" alt="" id="image"></div>
+                            <div class="d-flex flex-column pl-md-3 pl-1">
+                                <div><h6>SUNDAY DRESS</h6></div>
+                                <div >Art.No:<span class="pl-2">056289891</span></div>
+                                <div>Cor:<span class="pl-3">Preto</span></div>
+                                <div>Tamanho:<span class="pl-4">M</span></div>
+                            </div>                    
+                        </div>
+                        <div class="pl-md-0 pl-1"><b>R$200,00</b></div>
+                        <div class="pl-md-0 pl-2">
+                            <span class="fa fa-minus-square text-secondary" onclick="removerItem(1)"></span>
+                            <span class="px-md-3 px-1" id="quantidade1">0</span>
+                            <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(1)"></span>
+                        </div>
+                        <div class="pl-md-0 pl-1"><b>R$</b> <span id="total1"></span></div>
+                        <div class="close">&times;</div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <div class="container bg-light rounded-bottom py-4" id="zero-pad">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="px-md-0 px-1" id="footer-font">
+                            <b class="pl-md-4">SUBTOTAL R$<span class="pl-md-4" id="valorTotalCompra"></span></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+            </div>
+            <div class="col-md-7 col-lg-8" id="entrega">
+                <h4 class="mb-3">Endereço de pagamento</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="username" class="form-label">Nome de usuário</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="username" placeholder="Nome de usuário" required>
+                                <div class="invalid-feedback">
+                                    Your username is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span
+                                    class="text-body-secondary">(Opcional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Rua Principal" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address2" class="form-label">Endereço 2 <span
+                                    class="text-body-secondary">(Opcional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartamento/bloco">
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">País</label>
+                            <select class="form-select" id="country" required>
+                                <option value="">Escolha</option>
+                                <option>Brasil</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">Estado</label>
+                            <select class="form-select" id="state" required>
+                                <option value="">Escolha</option>
+                                <option>Rio de Janeiro</option>
+                                <option>São Paulo</option>
+                                <option>Minas Gerais</option>
+                                <option>Espirito Santo</option>
+                                <option>Bahia</option>
+                                <option>Amazonas</option>
+                                <option>Pará</option>
+                                <option>Tocantins</option>
+                                <option>Roraima</option>
+                                <option>Rondonia</option>
+                                <option>Acre</option>
+                                <option>Maranhão</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address">
+                        <label class="form-check-label" for="same-address">Endereço de entrega é o mesmo de cobrança</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="save-info">
+                        <label class="form-check-label" for="save-info">Salvar informações para próximas compras</label>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">Pagamento</h4>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                required>
+                            <label class="form-check-label" for="credit">Cartão de crédito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Cartão de debito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PIX</label>
+                        </div>
+                    </div>
+
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <label for="cc-name" class="form-label">Nome no cartão</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-body-secondary">Nome completo como escrito no cartão</small>
+                            <div class="invalid-feedback">
+                                Name on card is required
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Numero do cartão</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Credit card number is required
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Data de validade</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Expiration date required
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Security code required
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <section class="btn btn-sm">
+                        <a href="index.html" class="w-100 btn btn-outline-secondary btn-lg" type="submit">Voltar</a>
+                        <a class="w-100 btn btn-secondary btn-lg" type="submit" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">Finalizar compra</a>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <footer class="container-fluid bg-light p-2 text-center">
+        <p>Desenvolvido por Nana Marins</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+    <script src="cart.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+<!-- modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Suas compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Produto adicionado ao carrinho!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+                <a href="checkout.html" type="button" class="btn btn-secondary">Finalizar a compra</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">VIVI Nefertari</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Compra concluida com sucesso! Obrigada por comprar conosco.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Concluido</button>
+                <a href="index.html" type="button" class="btn btn-dark">Voltar para o site</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
