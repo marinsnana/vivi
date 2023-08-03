@@ -2,18 +2,15 @@ body{
     background-color: #eeeeee;
 }
 
-.footer-background{
-    background-color: rgb(204, 199, 199);
-}
-
 #heading {
     font-size: 20px;
-
 }
 
 #total {
     font-weight: bold;
 }
+
+
 
 
 @media(max-width:991px){

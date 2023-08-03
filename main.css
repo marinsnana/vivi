@@ -55,15 +55,16 @@ nav {
 .carousel-caption h5 {
     font-size: 50px;
     color: black;
+    font-weight: bolder;
 }
 
 .navbar-brand {
     font-size: 50px;
-
+    color: rgb(153, 101, 174);
 }
 
 .nav-link {
-    color: black;
+    color: rgb(153, 101, 174);
     margin-bottom: 10px;
     font-size: 20px;
 }
@@ -96,12 +97,14 @@ nav {
 
 #quemsomos h5{
     font-size: 50px;
+    color: rgb(153, 101, 174);
+    font-weight: bold
 }
 
 #girlpic {
     border-radius: 60%;
     max-width: 270px;
-    height: 250px;
+    height: 260px;
     padding: 20px;
 }
 
@@ -117,7 +120,44 @@ nav {
 
 #equipe img {
     border-radius: 60%;
-    max-width: 270px;
-    height: 250px;
+    max-width: 200px;
+    height: 180px;
     padding: 20px;
+}
+
+.redes {
+    list-style: none;
+    text-align: center;
+}
+
+.redes a{
+    text-decoration: none;
+    color: rgb(153, 101, 174);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.intro {
+    list-style: none;
+    display: inline;
+    padding-top: 40px;
+}
+
+.footer {
+    background-color: #cdcccc;
+    color: black;
+}
+
+#links h5 {
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+.contatofooter {
+    padding-bottom: 12px;
+    font-weight: bolder;
+}
+
+.newsletter h5 {
+    font-weight: bolder;
 }
